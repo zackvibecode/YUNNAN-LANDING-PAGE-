@@ -1,0 +1,269 @@
+[
+  '                                                                  Jelajah China!\r\n' +
+    'VALID UNTIL\r\n' +
+    '              FEBRUARY\r\n' +
+    '                         2026\r\n' +
+    '                                                          WILAYAH\r\n' +
+    '                                                          YUNNAN\r\n' +
+    '                                                          RM4,190\r\n' +
+    '                                                        DARI\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                                         DALI • WEISHAN • LIJIANG • KUNMING\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                                      PELEPASAN BERKUMPULAN 2026\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                w ww.n usat ra.c om\r\n',
+  '                                                                                                  DATE | PRICE\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                       WILAYAH YUNNAN                                          7 HARI 5 MALAM\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '         PREMIER DATE 2026\r\n' +
+    '\r\n' +
+    '    BERLEPAS            KETIBAAN            HARGA ASAL                 HARGA PROMO              NOTA\r\n' +
+    '\r\n' +
+    '      25 MAR             31 MAR              RM 4,890                    RM 4,790    Cuti Sekolah + Raya Eid Fitri\r\n' +
+    '      28 MEI             03 JUN              RM 4,890                    RM 4,790    Cuti Sekolah + Raya Eid Adha\r\n' +
+    '      29 MEI             04 JUN              RM 4,890                    RM 4,790    Cuti Sekolah + Raya Eid Adha\r\n' +
+    '      30 MEI             05 JUN              RM 4,890                    RM 4,790    Cuti Sekolah + Raya Eid Adha\r\n' +
+    '      31 MEI             06 JUN              RM 4,890                    RM 4,790    Cuti Sekolah + Raya Eid Adha\r\n' +
+    '      01 JUN             07 JUN              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      28 AUG             03 SEP              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      29 AUG             04 SEP              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      30 AUG             05 SEP              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      31 AUG             06 SEP              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      04 DEC             10 DEC              RM 4,590                   RM 4,490            Cuti Sekolah\r\n' +
+    '      05 DEC             11 DEC              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      10 DEC             16 DEC              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      11 DEC             17 DEC              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      17 DEC             23 DEC              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      18 DEC             24 DEC              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      19 DEC             25 DEC              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      23 DEC             29 DEC              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '      24 DEC             30 DEC              RM 4,890                    RM 4,790           Cuti Sekolah\r\n' +
+    '\r\n' +
+    '\r\n' +
+    'Nota :\r\n' +
+    '1) Harga kanak-kanak diskaun RM200 dari harga dewasa dan mestilah\r\n' +
+    '   menjadi peserta no 3 dalam bilik, jika tidak ianya dikira dewasa.\r\n' +
+    '2) Penginapan single tambahan RM800. Harga untuk\r\n' +
+    '   infant adalah RM500.\r\n' +
+    '3) Tertakluk kepada pertukaran dan akan dimaklumkan\r\n' +
+    '   berdasarkan notis.\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                                                                                                     PAGE 2\r\n',
+  '                                                                                   DATE | PRICE\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                 WILAYAH YUNNAN                                 7 HARI 5 MALAM\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '  TARIKH PELEPASAN 2026\r\n' +
+    '\r\n' +
+    '  BERLEPAS           KETIBAAN         HARGA ASAL       HARGA PROMO               NOTA\r\n' +
+    '\r\n' +
+    '   07 FEB            13 FEB             RM 4,590         RM 4,490            Musim Winter\r\n' +
+    '   02 APR            08 APR             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   09 APR            14 APR             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   16 APR            22 APR             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   17 APR            23 APR             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   22 APR            28 APR             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   23 APR            29 APR             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   07 MEI            13 MEI             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   08 MEI            14 MEI             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   14 MEI            20 MEI             RM 4,590         RM 4,490            Musim Spring\r\n' +
+    '   15 MEI            21 MEI             RM 4,590            RM 4,190         Musim Spring\r\n' +
+    '   10 JUN            16 JUN             RM 4,590            RM 4,190         Musim Summer\r\n' +
+    '   16 JUN            22 JUN             RM 4,590         RM 4,490            Musim Summer\r\n' +
+    '   03 JUL            09 JUL             RM 4,590            RM 4,190         Musim Summer\r\n' +
+    '   17 JUL            23 JUL             RM 4,590         RM 4,490            Musim Summer\r\n' +
+    '   06 AUG            12 AUG             RM 4,590         RM 4,490            Musim Summer\r\n' +
+    '   13 AUG            19 AUG             RM 4,590         RM 4,490            Musim Summer\r\n' +
+    '   22 AUG            28 AUG             RM 4,590         RM 4,490            Musim Summer\r\n' +
+    '   16 SEP            22 SEP             RM 4,590         RM 4,490            Musim Summer\r\n' +
+    '   24 SEP            30 SEP             RM 4,590         RM 4,490            Musim Summer\r\n' +
+    '   09 OCT            15 OCT             RM 4,590         RM 4,490            Musim Autumn\r\n' +
+    '   16 OCT            22 OCT             RM 4,590         RM 4,490            Musim Autumn\r\n' +
+    '   22 OCT            28 OCT             RM 4,590         RM 4,490            Musim Autumn\r\n' +
+    '   23 OCT            29 OCT             RM 4,590         RM 4,490            Musim Autumn\r\n' +
+    '   06 NOV            12 NOV             RM 4,590         RM 4,490       Musim Autumn + Deepavali\r\n' +
+    '   07 NOV            13 NOV             RM 4,590         RM 4,490       Musim Autumn + Deepavali\r\n' +
+    '   19 NOV            25 NOV             RM 4,590         RM 4,490            Musim Autumn\r\n' +
+    '   20 NOV            26 NOV             RM 4,590         RM 4,490            Musim Autumn\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    'CU TI S E KO L A H 2 02 6\r\n' +
+    'CUTI 1                                             CUTI 3\r\n' +
+    'MULA : 19 MAR 2026     TAMAT    : 29 MAR 2026      MULA : 29 AUG 2026   TAMAT   : 06 SEP 2026\r\n' +
+    '\r\n' +
+    '\r\n' +
+    'CUTI 2                                             CUTI 4\r\n' +
+    'MULA : 23 MAY 2026     TAMAT    : 07 JUN 2026      MULA : 05 DIS 2026   TAMAT   : 31 DIS 2026\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                                                                                   PAGE 2\r\n',
+  '                                                                                             ITINERARY\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                     WILAYAH YUNNAN                                     7 HARI 5 MALAM\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    'HARI 1 : KUALA LUMPUR – KUNMING (MOB)                   HARI 5 : LIJIANG – KUNMING (B/L/D)\r\n' +
+    'Berkumpul di Lapangan Terbang untuk urusan              Selepas sarapan pagi dan daftar keluar hotel.\r\n' +
+    'daftar masuk dan taklimat ringkas sebelum berlepas      Lawatan ke Black Dragon Pool yang merupakan\r\n' +
+    'ke Kunming. Tiba di Lapangan Terbang Antarabang-        sumber air dari Lijiang Old town, air nya yang jernih\r\n' +
+    'sa Kunming. Peserta di jemput oleh wakil kami           seperti jed. Makan tengahari dan menaiki keretapi\r\n' +
+    'disana dan dibawa terus ke hotel untuk berehat.         ke Kunming. Singgah di Shuncheng Mosque yang\r\n' +
+    '                                                        merupakan masjid pertama dibina pada awal 1425\r\n' +
+    'HARI 2 : KUNMING - WEISHAN - DALI (B/L/D)               dan juga ibu pejabat Persatuan Islam di Wilayah\r\n' +
+    'Selepas sarapan pagi dan daftar keluar hotel, peserta   Yunnan. Seterusnya ke Green Lake Park untuk\r\n' +
+    'bergerak menuju ke stesen keretapi laju untuk           bergambar. Makan malam dan bermalam di hotel.\r\n' +
+    'meneruskan perjalanan ke Dali. Kemudian makan\r\n' +
+    'tengahari di restoran tempatan dan ke Weishan           HARI 6 : KUNMING – KUALA LUMPUR (B/L/D)\r\n' +
+    'Mosque. Seterusnya singgah melawat dan bergam-          Selepas sarapan pagi di hotel dan melawat Naigu\r\n' +
+    'bar di Dali Erhai Lake Ecology Landscape Corridor       Stone Forest. Dikenali sejak Dinasti Ming (1368-1644\r\n' +
+    'yang merupakan sebuah tasik semula jadi dengan          A.D.) sebagai ‘Keajaiban Pertama Dunia’ berada di\r\n' +
+    'pemandangan yang sangat indah. Makan malam              daerah Lunan Yi Nationality Autonomous County.\r\n' +
+    'dan berehat di hotel.                                   Shilin adalah lambing pelancongan Yunnan. Ia meli-\r\n' +
+    '                                                        puti kawasan seluas 400 kilometer persegi (96,000\r\n' +
+    'HARI 3 : DALI - LIJIANG (B/L/D)                         ekar) termasuk hutan batu besar dan batu kecil,\r\n' +
+    'Selepas sarapan pagi, peserta dibawa ke Dali            serta banyak tempat indah yang lain Selepas itu,\r\n' +
+    'Lixiangbang, Mini Dali Santorini untuk bergambar,       peserta dibawa membeli belah di Nanping Pedestri-\r\n' +
+    'kawasan yang diinspirasikan oleh Santorini, Greece.     an Street. Kemudian photostop di Kunming Old\r\n' +
+    'Terletak di kawasan Dali, bandar yang terkenal          Street. Makan malam dan bertolak ke Lapangan\r\n' +
+    'dengan seni bina klasik, tasik indah dan warisan        Terbang untuk penerbangan pulang ke Kuala\r\n' +
+    'budaya etnik Bai. Lixiangbang ini bagaikan satu         Lumpur.\r\n' +
+    'perkampungan ala Eropah. Makan tengah hari dan\r\n' +
+    'singgah di Nanmen Mosque, Dali Ancient City-For-        HARI 7 : KUALA LUMPUR (MOB)\r\n' +
+    'eigners Street. Bergerak ke Lijiang untuk makan         Tiba di KLIA dengan sejuta kenangan indah di\r\n' +
+    'malam dan check in hotel.                               Wilayah Yunnan.\r\n' +
+    '\r\n' +
+    'HARI 4 : LIJIANG (B/L/D)\r\n' +
+    'Selepas sarapan pagi, peserta dibawa ke Jade\r\n' +
+    'Dragon Snow Mountain (termasuk kereta kabel).\r\n' +
+    'Salah satu tarikan alam semula jadi yang terkenal di\r\n' +
+    'Yunnan, China — terletak kira-kira 25 km dari bandar\r\n' +
+    'purba Lijiang. Gunung ini sangat terkenal kerana\r\n' +
+    'landskapnya yang dramatik dan keindahan semula\r\n' +
+    'jadi yang menakjubkan, menjadikannya lokasi wajib\r\n' +
+    'untuk pengunjung yang ke Yunnan. Seterusnya\r\n' +
+    'peserta akan dibawa untuk menyaksikan persemba-\r\n' +
+    'han tarian secara langsung Impression of Lijiang.\r\n' +
+    'Makan tengah hari. Berkunjung ke White Water\r\n' +
+    'River dan Blue Moon Valley. Lawatan diteruskan ke\r\n' +
+    'Lijiang Mosque. Makan malam dan berehat di hotel.\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                                                                                         PAGE 3\r\n',
+  '                                                                                                           PAYMENT\r\n' +
+    '                                                                                                            DETAILS\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                           WILAYAH YUNNAN                                            7 HARI 5 MALAM\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '    Harga Termasuk                                       Harga Tidak Termasuk\r\n' +
+    '    • Tiket Penerbangan Pergi Balik                      • Insurans Peribadi\r\n' +
+    '    • Tiket kereta api 2x                                • Optional Tour\r\n' +
+    '    • Penginapan 5 malam                                 • Tipping RM100 seorang\r\n' +
+    '    • Makan HALAL sesuai aturcara\r\n' +
+    '    • Pengangkutan berhawa dingin\r\n' +
+    '    • Pemandu pelancong yang berpengalaman\r\n' +
+    '    • Tour Escort yang Kacak dari Malaysia\r\n' +
+    '    • Bayaran masuk tempat lawatan\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                  -   Pilih tarikh pelepasan anda\r\n' +
+    '   CARA                           -   Hantarkan salinan ic/passpot\r\n' +
+    '                                  -   Dapatkan pengesahan daripada pihak Nusa Travel\r\n' +
+    '   TEMPAHAN                       -   Membuat bayaran deposit sebanyak RM1,000 seorang\r\n' +
+    '                                  -   Baki bayaran adalah 45 hari sebelum berlepas\r\n' +
+    '                    Program di atas mungkin mengalami sedikit perubahan berdasarkan musim semasa.\r\n' +
+    '                          Tertakluk kepada syarat dan terma yang dimuatkan di www.nusatra.com\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '    TOUR KONSULTAN\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '   USTAZ FAIZ          LIN           SHIEMA            AIN          NAJA            FATIN           ALIF            MK\r\n' +
+    '   016-287 9202   011-2561 2847   011-1633 9202   014-325 9202   014-967 9202    014-937 9202   010-914 9202   010-766 9202\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '     NUSA TRAVEL SDN BHD\r\n' +
+    '     MOTAC LICENSE 8693\r\n' +
+    '\r\n' +
+    '   HQ\r\n' +
+    '   34-2, Wisma Kwan Siew Choo, Jalan Besar, 43000 Bandar Kajang, Selangor\r\n' +
+    '\r\n' +
+    '   KOTA BHARU\r\n' +
+    '   PT 152 T/2, Jln Kelochor, 15300, Kota Bharu, Kelantan\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                                           nusatra.com          nusatra.tours        nusatravel\r\n' +
+    'PAYMENT NUSA TRAVEL SDN BHD\r\n' +
+    'INFO    MAYBANK\r\n' +
+    '        5620 2162 9476                                       admin@nusatra.com             www.nusatra.com\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                                                                                                       PAGE 4\r\n',
+  '                                                                                         ATTRACTION\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '      Black Dragon           Blue Moon Valley               Bullet Train          White Water River\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    'Jade Dragon Snow Mountain      Weishan City                 Stone Forest          Shuncheng Mosque\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '    Yongning Mosque          Dali Train Station      Impression Of Lijiang        Dali Foreigner Street\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '             Kunming Train Station         Lijiang Mosque             Lijiang Old Town\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '\r\n' +
+    '                                                                                                      PAGE 5\r\n',
+  'PAGE 6\r\n'
+]
