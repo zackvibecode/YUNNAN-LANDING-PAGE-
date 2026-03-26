@@ -85,13 +85,14 @@
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         @keyframes fadeIn { from { opacity: 0; transform:translateY(10px); } to { opacity: 1; transform:translateY(0); } }
-    </style>
+      details > summary { list-style: none; } details summary::-webkit-details-marker { display:none; } details[open] summary ~ * { animation: fadeInDown 0.3s ease-in-out; } @keyframes fadeInDown { 0% { opacity: 0; transform: translateY(-10px); } 100% { opacity: 1; transform: translateY(0); } }
+</style>
 </head>
 <body class="bg-surface font-body text-on-surface">
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-sm">
 <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
-<img src="assets/images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-10 w-auto" />
+<div class="flex items-center gap-3"><img src="assets/images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-10 w-auto" /><span class="font-headline font-bold text-xl text-primary tracking-tight">Nusa Travel</span></div>
 <div class="hidden md:flex items-center space-x-8">
 <a class="text-primary font-bold border-b-2 border-primary pb-1" href="#destinations">Destinations</a>
 <a class="text-zinc-600 hover:text-zinc-900 transition-colors" href="#itinerary">Itinerary</a>
@@ -115,7 +116,7 @@
 <span class="text-xs font-bold tracking-widest uppercase">Group 2026 | Makan halal | Tour leader Malaysia</span>
 </div>
 <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-[1.1] mb-6 text-balance md:text-left text-center">
-                    Percutian Yunnan 7 Hari Semua Termasuk &mdash; <span class="text-primary italic">Anda Hanya Perlu Hadir & Nikmati.</span>
+                    Terokai Keajaiban Bumi Yunnan &mdash; <span class="text-primary italic">Pakej Lengkap 7 Hari 5 Malam.</span>
 </h1>
 <p class="text-2xl font-bold text-on-surface-variant mb-8 md:text-left text-center">
                     Dari <span class="text-primary text-4xl">RM4,190</span> sahaja.
@@ -135,7 +136,7 @@
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-4 mb-10">
-<a href="https://wa.me/601111111111" class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 editorial-shadow hover:scale-[1.02] transition-transform">
+<a href="https://wa.me/601255001601" class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 editorial-shadow hover:scale-[1.02] transition-transform">
                         WhatsApp Sekarang
                         <span class="material-symbols-outlined">send</span>
 </a>
@@ -211,7 +212,7 @@
 <div class="max-w-7xl mx-auto">
 <div class="mb-16 text-center">
 <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-4">Lebih Daripada Sekadar Destinasi.</h2>
-<p class="text-xl text-on-surface-variant">Sebuah himpunan memori kemegahan alam yang tidak dapat dilupakan.</p>
+<p class="text-xl text-on-surface-variant">Saksikan keindahan alam semula jadi ciptaan Tuhan yang memukau pandangan dan menjanjikan pengalaman percutian yang sukar dilupakan.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
 <div class="md:col-span-8 relative overflow-hidden rounded-3xl group">
@@ -248,75 +249,81 @@
 <div class="max-w-4xl mx-auto">
 <div class="text-center mb-16 px-4">
 <h2 class="font-headline text-4xl font-extrabold mb-4">Aturcara Perjalanan (Padat & Berbaloi)</h2>
-<p class="text-primary font-bold">Setiap hari mempunyai keistimewaan tersendiri. Tiada masa terbuang sekadar di dalam kenderaan.</p>
+<p class="text-primary font-bold">Setiap hari mempunyai keistimewaan tersendiri. Tiada masa terbuang.</p>
 </div>
-<div class="space-y-4">
-<div class="bg-surface-container-lowest p-6 rounded-2xl editorial-shadow">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-white font-headline px-4 py-2 rounded-xl">01</div>
+<div class="space-y-6">
+
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl editorial-shadow group hover:border-primary/50 transition-colors border border-transparent">
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<div class="bg-primary text-white font-headline px-5 py-3 rounded-xl font-bold flex-shrink-0 text-center h-min">HARI 1</div>
 <div>
-<h4 class="text-lg font-bold mb-1">KUALA LUMPUR &mdash; KUNMING</h4>
-<p class="text-on-surface-variant text-sm">Ketibaan di Kunming Airport, disambut oleh team & terus ke hotel. Beli simkad, berehat di hotel Kunming. (MOB)</p>
+<h4 class="text-xl font-extrabold mb-2 text-on-surface">KUALA LUMPUR &mdash; KUNMING <span class="text-sm font-normal text-primary bg-primary/10 px-2 py-0.5 rounded-full ml-2">(MOB)</span></h4>
+<p class="text-on-surface-variant leading-relaxed text-sm">Berkumpul di Lapangan Terbang untuk urusan daftar masuk dan taklimat ringkas sebelum berlepas ke Kunming. Tiba di Lapangan Terbang Antarabangsa Kunming. Peserta di jemput oleh wakil kami disana dan dibawa terus ke hotel untuk berehat.</p>
 </div>
 </div>
 </div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl editorial-shadow">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-white font-headline px-4 py-2 rounded-xl">02</div>
+
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl editorial-shadow group hover:border-primary/50 transition-colors border border-transparent">
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<div class="bg-primary text-white font-headline px-5 py-3 rounded-xl font-bold flex-shrink-0 text-center h-min">HARI 2</div>
 <div>
-<h4 class="text-lg font-bold mb-1">KUNMING &mdash; DALI (Bullet Train)</h4>
-<p class="text-on-surface-variant text-sm">Bertolak ke Dali dengan Bullet Train. Melawat Dali Ancient City & Erhai Lake Ecological Corridor (termasuk basikal). (B/L/D)</p>
+<h4 class="text-xl font-extrabold mb-2 text-on-surface">KUNMING - WEISHAN - DALI <span class="text-sm font-normal text-primary bg-primary/10 px-2 py-0.5 rounded-full ml-2">(B/L/D)</span></h4>
+<p class="text-on-surface-variant leading-relaxed text-sm">Selepas sarapan pagi dan daftar keluar hotel, peserta bergerak menuju ke stesen keretapi laju untuk meneruskan perjalanan ke Dali. Kemudian makan tengahari di restoran tempatan dan ke Weishan Mosque. Seterusnya singgah melawat dan bergambar di Dali Erhai Lake Ecology Landscape Corridor yang merupakan sebuah tasik semula jadi dengan pemandangan yang sangat indah. Makan malam dan berehat di hotel.</p>
 </div>
 </div>
 </div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl editorial-shadow">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-white font-headline px-4 py-2 rounded-xl">03</div>
+
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl editorial-shadow group hover:border-primary/50 transition-colors border border-transparent">
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<div class="bg-primary text-white font-headline px-5 py-3 rounded-xl font-bold flex-shrink-0 text-center h-min">HARI 3</div>
 <div>
-<h4 class="text-lg font-bold mb-1">DALI &mdash; LIJIANG</h4>
-<p class="text-on-surface-variant text-sm">Lawatan ke Lijiang Old City & Black Dragon Pool Park. Makan malam percuma di restoran & check-in Lijiang hotel. (B/L/D)</p>
+<h4 class="text-xl font-extrabold mb-2 text-on-surface">DALI - LIJIANG <span class="text-sm font-normal text-primary bg-primary/10 px-2 py-0.5 rounded-full ml-2">(B/L/D)</span></h4>
+<p class="text-on-surface-variant leading-relaxed text-sm">Selepas sarapan pagi, peserta dibawa ke Dali Lixiangbang, Mini Dali Santorini untuk bergambar, kawasan yang diinspirasikan oleh Santorini, Greece. Terletak di kawasan Dali, bandar yang terkenal dengan seni bina klasik, tasik indah dan warisan budaya etnik Bai. Lixiangbang ini bagaikan satu perkampungan ala Eropah. Makan tengah hari dan singgah di Nanmen Mosque, Dali Ancient City-Foreigners Street. Bergerak ke Lijiang untuk makan malam dan check in hotel.</p>
 </div>
 </div>
 </div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl editorial-shadow border-2 border-primary/20">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-white font-headline px-4 py-2 rounded-xl">04</div>
+
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl editorial-shadow border-2 border-primary/30 relative">
+<div class="absolute -top-3 right-6 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">Main Highlight</div>
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<div class="bg-primary text-white font-headline px-5 py-3 rounded-xl font-bold flex-shrink-0 text-center h-min">HARI 4</div>
 <div>
-<div class="flex items-center gap-2 mb-1">
-<h4 class="text-lg font-bold text-primary italic">Highlight: Jade Dragon Snow Mountain</h4>
-<span class="bg-primary/10 text-primary text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Must Visit</span>
-</div>
-<p class="text-on-surface-variant text-sm">Naik Cable Car ke Glacier Park. Kemudian ke Blue Moon Valley (termasuk bateri kereta) & pertunjukan seni tempatan. (B/L/D)</p>
+<h4 class="text-xl font-extrabold mb-2 text-on-surface">LIJIANG <span class="text-sm font-normal text-primary bg-primary/10 px-2 py-0.5 rounded-full ml-2">(B/L/D)</span></h4>
+<p class="text-on-surface-variant leading-relaxed text-sm">Selepas sarapan pagi, peserta dibawa ke Jade Dragon Snow Mountain (termasuk kereta kabel). Salah satu tarikan alam semula jadi yang terkenal di Yunnan, China &mdash; terletak kira-kira 25 km dari Lijiang. Gunung ini landskapnya dramatik dan keindahan menakjubkan. Menyaksikan tarian langsung Impression of Lijiang. Makan tengah hari. Berkunjung ke White Water River dan Blue Moon Valley. Lawatan diteruskan ke Lijiang Mosque. Makan malam dan berehat di hotel.</p>
 </div>
 </div>
 </div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl editorial-shadow">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-white font-headline px-4 py-2 rounded-xl">05</div>
+
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl editorial-shadow group hover:border-primary/50 transition-colors border border-transparent">
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<div class="bg-primary text-white font-headline px-5 py-3 rounded-xl font-bold flex-shrink-0 text-center h-min">HARI 5</div>
 <div>
-<h4 class="text-lg font-bold mb-1">LIJIANG &mdash; KUNMING (Bullet Train)</h4>
-<p class="text-on-surface-variant text-sm">Kembali ke Kunming dengan Bullet Train. Melawat Donghui Mosque & Golden Horse dan Jade Rooster Archway untuk shopping. (B/L/D)</p>
+<h4 class="text-xl font-extrabold mb-2 text-on-surface">LIJIANG &mdash; KUNMING <span class="text-sm font-normal text-primary bg-primary/10 px-2 py-0.5 rounded-full ml-2">(B/L/D)</span></h4>
+<p class="text-on-surface-variant leading-relaxed text-sm">Selepas sarapan pagi dan daftar keluar hotel. Lawatan ke Black Dragon Pool yang merupakan sumber air dari Lijiang Old town, airnya jernih seperti jed. Makan tengahari dan menaiki keretapi ke Kunming. Singgah di Shuncheng Mosque (masjid pertama dibina awal 1425, ibu pejabat Persatuan Islam Yunnan). Seterusnya ke Green Lake Park untuk bergambar. Makan malam dan bermalam di hotel.</p>
 </div>
 </div>
 </div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl editorial-shadow">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-white font-headline px-4 py-2 rounded-xl">06</div>
+
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl editorial-shadow group hover:border-primary/50 transition-colors border border-transparent">
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<div class="bg-primary text-white font-headline px-5 py-3 rounded-xl font-bold flex-shrink-0 text-center h-min">HARI 6</div>
 <div>
-<h4 class="text-lg font-bold mb-1">KUNMING &mdash; SHILIN</h4>
-<p class="text-on-surface-variant text-sm">Melawat Batu Hutan (Shilin Stone Forest) & ladang bunga Kunming. Makan malam perpisahan dan check-in hotel. (B/L/D)</p>
+<h4 class="text-xl font-extrabold mb-2 text-on-surface">KUNMING &mdash; KUALA LUMPUR <span class="text-sm font-normal text-primary bg-primary/10 px-2 py-0.5 rounded-full ml-2">(B/L/D)</span></h4>
+<p class="text-on-surface-variant leading-relaxed text-sm">Selepas sarapan pagi dan melawat Naigu Stone Forest (Keajaiban Pertama Dunia zaman Dinasti Ming). Shilin adalah lambang pelancongan Yunnan yang meliputi 400 km persegi. Seterusnya membeli belah di Nanping Pedestrian Street dan photostop di Kunming Old Street. Makan malam dan bertolak ke Lapangan Terbang.</p>
 </div>
 </div>
 </div>
-<div class="bg-surface-container-lowest p-6 rounded-2xl editorial-shadow">
-<div class="flex items-start gap-4">
-<div class="bg-primary text-white font-headline px-4 py-2 rounded-xl">07</div>
+
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl editorial-shadow group hover:border-primary/50 transition-colors border border-transparent">
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<div class="bg-primary text-white font-headline px-5 py-3 rounded-xl font-bold flex-shrink-0 text-center h-min">HARI 7</div>
 <div>
-<h4 class="text-lg font-bold mb-1">KUNMING &mdash; KUALA LUMPUR</h4>
-<p class="text-on-surface-variant text-sm">Penghantaran ke lapangan terbang dengan kenangan manis dari Yunnan. (B/MOB)</p>
+<h4 class="text-xl font-extrabold mb-2 text-on-surface">KUALA LUMPUR <span class="text-sm font-normal text-primary bg-primary/10 px-2 py-0.5 rounded-full ml-2">(MOB)</span></h4>
+<p class="text-on-surface-variant leading-relaxed text-sm">Tiba di KLIA dengan sejuta kenangan indah di Wilayah Yunnan.</p>
 </div>
 </div>
 </div>
+
 </div>
 </div>
 </section>
@@ -364,765 +371,316 @@
     <button onclick="document.getElementById('promoTab').classList.add('active'); document.getElementById('premierTab').classList.remove('active'); this.classList.remove('bg-surface','text-primary'); this.classList.add('bg-primary','text-white'); document.getElementById('btnPremier').classList.remove('bg-primary','text-white'); document.getElementById('btnPremier').classList.add('bg-surface','text-primary');" id="btnPromo" class="px-6 py-3 rounded-full font-bold bg-surface text-primary border border-primary/20 transition-colors">Promo Dates</button>
 </div>
 
-<div id="premierTab" class="tab-content active"><div class="mt-6 rounded-[2rem] bg-surface-container-low p-4 md:p-6"><div class="mb-5 text-center"><p class="text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Premier Date 2026</p><h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">Tarikh cuti sekolah dan demand paling tinggi</h3></div><div class="space-y-3 ">
-
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah + Raya Eid Fitri</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">25 MAR 2026 - 31 MAR 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 1: 19 MAR 2026 - 29 MAR 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah + Raya Eid Adha</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">28 MEI 2026 - 03 JUN 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah + Raya Eid Adha</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">29 MEI 2026 - 04 JUN 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah + Raya Eid Adha</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">30 MEI 2026 - 05 JUN 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah + Raya Eid Adha</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">31 MEI 2026 - 06 JUN 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">01 JUN 2026 - 07 JUN 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">28 AUG 2026 - 03 SEP 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">29 AUG 2026 - 04 SEP 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">30 AUG 2026 - 05 SEP 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">31 AUG 2026 - 06 SEP 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">04 DEC 2026 - 10 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">05 DEC 2026 - 11 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">10 DEC 2026 - 16 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">11 DEC 2026 - 17 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">17 DEC 2026 - 23 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">18 DEC 2026 - 24 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">19 DEC 2026 - 25 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">23 DEC 2026 - 29 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Sekolah</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">24 DEC 2026 - 30 DEC 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 4: 05 DEC 2026 - 31 DEC 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,890</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,790</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-</div></div></div>
-
-<div id="promoTab" class="tab-content"><div class="mt-6 rounded-[2rem] bg-surface-container-low p-4 md:p-6"><div class="mb-5 text-center"><p class="text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Tarikh Pelepasan 2026</p><h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">Pilihan promo biasa sepanjang tahun</h3></div><div class="space-y-3 ">
-
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Winter</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">07 FEB 2026 - 13 FEB 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">02 APR 2026 - 08 APR 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">09 APR 2026 - 14 APR 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">16 APR 2026 - 22 APR 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">17 APR 2026 - 23 APR 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">22 APR 2026 - 28 APR 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">23 APR 2026 - 29 APR 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">07 MEI 2026 - 13 MEI 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">08 MEI 2026 - 14 MEI 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">14 MEI 2026 - 20 MEI 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Spring</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">15 MEI 2026 - 21 MEI 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,190</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">10 JUN 2026 - 16 JUN 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,190</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">16 JUN 2026 - 22 JUN 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 2: 23 MAY 2026 - 07 JUN 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">03 JUL 2026 - 09 JUL 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,190</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">17 JUL 2026 - 23 JUL 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">06 AUG 2026 - 12 AUG 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">13 AUG 2026 - 19 AUG 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">22 AUG 2026 - 28 AUG 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">16 SEP 2026 - 22 SEP 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Summer</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">24 SEP 2026 - 30 SEP 2026</span>
-<p class="text-sm text-on-surface-variant">Cuti 3: 29 AUG 2026 - 06 SEP 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Autumn</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">09 OCT 2026 - 15 OCT 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Autumn</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">16 OCT 2026 - 22 OCT 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Autumn</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">22 OCT 2026 - 28 OCT 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Autumn</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">23 OCT 2026 - 29 OCT 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Autumn + Deepavali</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">06 NOV 2026 - 12 NOV 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Autumn + Deepavali</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">07 NOV 2026 - 13 NOV 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Autumn</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">19 NOV 2026 - 25 NOV 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
-</div>
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Musim Autumn</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">20 NOV 2026 - 26 NOV 2026</span>
-<p class="text-sm text-on-surface-variant">Tarikh promo biasa 2026</p>
-</div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM 4,590</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM 4,490</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
-</div>
-</div>
-
-
+<div id="premierTab" class="tab-content active">
+    <div class="mt-8 max-w-4xl mx-auto space-y-4">
+        
+        <details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors shadow-sm">
+            <summary class="list-none flex justify-between items-center p-6 cursor-pointer font-extrabold text-xl text-on-surface select-none">
+                <div class="flex items-center gap-4">
+                    <span class="bg-primary/10 text-primary w-12 h-12 flex items-center justify-center rounded-xl font-headline tracking-tighter text-sm">MAR</span>
+                    <div>
+                        <span class="block text-primary">Cuti Penggal 1</span>
+                        <span class="text-sm font-normal text-on-surface-variant">Raya Eid Fitri</span>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-3xl">expand_circle_down</span>
+            </summary>
+            <div class="p-6 pt-0 bg-surface-container-lowest">
+                <div class="w-full bg-surface-container-low h-[1px] mb-6"></div>
+                <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item mb-3">
+                    <div>
+                        <div class="font-headline font-extrabold text-lg text-on-surface">25 MAR - 31 MAR 2026</div>
+                        <div class="text-sm text-green-600 font-bold tracking-widest uppercase mt-1">Available • 7D5N</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-[11px] text-zinc-400 line-through font-bold">RM 4,890</div>
+                        <div class="text-2xl font-extrabold text-primary">RM 4,790</div>
+                        <div class="text-xs text-primary font-bold group-hover/item:underline mt-1">Tempah <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></div>
+                    </div>
+                </a>
+            </div>
+        </details>
+
+        <details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors shadow-sm">
+            <summary class="list-none flex justify-between items-center p-6 cursor-pointer font-extrabold text-xl text-on-surface select-none">
+                <div class="flex items-center gap-4">
+                    <span class="bg-primary/10 text-primary w-12 h-12 flex items-center justify-center rounded-xl font-headline tracking-tighter text-sm">MEI</span>
+                    <div>
+                        <span class="block text-primary">Cuti Penggal 2</span>
+                        <span class="text-sm font-normal text-on-surface-variant">Raya Eid Adha</span>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-3xl">expand_circle_down</span>
+            </summary>
+            <div class="p-6 pt-0 bg-surface-container-lowest">
+                <div class="w-full bg-surface-container-low h-[1px] mb-6"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">28 MEI - 03 JUN 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available • 7D5N</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">29 MEI - 04 JUN 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available • 7D5N</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">30 MEI - 05 JUN 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available • 7D5N</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">31 MEI - 06 JUN 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available • 7D5N</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">01 JUN - 07 JUN 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available • 7D5N</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                </div>
+            </div>
+        </details>
+
+        <details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors shadow-sm">
+            <summary class="list-none flex justify-between items-center p-6 cursor-pointer font-extrabold text-xl text-on-surface select-none">
+                <div class="flex items-center gap-4">
+                    <span class="bg-primary/10 text-primary w-12 h-12 flex items-center justify-center rounded-xl font-headline tracking-tighter text-sm">AUG</span>
+                    <div>
+                        <span class="block text-primary">Cuti Penggal 3</span>
+                        <span class="text-sm font-normal text-on-surface-variant">Ogos - September</span>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-3xl">expand_circle_down</span>
+            </summary>
+            <div class="p-6 pt-0 bg-surface-container-lowest">
+                <div class="w-full bg-surface-container-low h-[1px] mb-6"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">28 AUG - 03 SEP 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">29 AUG - 04 SEP 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">30 AUG - 05 SEP 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">31 AUG - 06 SEP 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                </div>
+            </div>
+        </details>
+
+        <details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors shadow-sm">
+            <summary class="list-none flex justify-between items-center p-6 cursor-pointer font-extrabold text-xl text-on-surface select-none">
+                <div class="flex items-center gap-4">
+                    <span class="bg-primary/10 text-primary w-12 h-12 flex items-center justify-center rounded-xl font-headline tracking-tighter text-sm">DEC</span>
+                    <div>
+                        <span class="block text-primary">Cuti Penggal 4</span>
+                        <span class="text-sm font-normal text-on-surface-variant">Disember Percutian Hujung Tahun</span>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-3xl">expand_circle_down</span>
+            </summary>
+            <div class="p-6 pt-0 bg-surface-container-lowest">
+                <div class="w-full bg-surface-container-low h-[1px] mb-6"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">04 DEC - 10 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">05 DEC - 11 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">10 DEC - 16 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">11 DEC - 17 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">17 DEC - 23 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">18 DEC - 24 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">19 DEC - 25 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">23 DEC - 29 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">24 DEC - 30 DEC 2026</div><div class="text-xs text-green-600 font-bold uppercase mt-1">Available</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,790</div></div>
+                    </a>
+                </div>
+            </div>
+        </details>
+    </div>
+</div>
+
+<div id="promoTab" class="tab-content">
+    <div class="mt-8 max-w-4xl mx-auto space-y-4">
+        
+        <details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors shadow-sm">
+            <summary class="list-none flex justify-between items-center p-6 cursor-pointer font-extrabold text-xl text-on-surface select-none">
+                <div class="flex items-center gap-4">
+                    <span class="bg-primary/10 text-primary w-12 h-12 flex items-center justify-center rounded-xl font-headline tracking-tighter text-sm">WIN</span>
+                    <span class="block text-primary">Musim Winter</span>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-3xl">expand_circle_down</span>
+            </summary>
+            <div class="p-6 pt-0 bg-surface-container-lowest">
+                <div class="w-full bg-surface-container-low h-[1px] mb-6"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">07 FEB - 13 FEB 2026</div></div>
+                        <div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                </div>
+            </div>
+        </details>
+
+        <details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors shadow-sm">
+            <summary class="list-none flex justify-between items-center p-6 cursor-pointer font-extrabold text-xl text-on-surface select-none">
+                <div class="flex items-center gap-4">
+                    <span class="bg-primary/10 text-primary w-12 h-12 flex items-center justify-center rounded-xl font-headline tracking-tighter text-sm">SPR</span>
+                    <span class="block text-primary">Musim Spring</span>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-3xl">expand_circle_down</span>
+            </summary>
+            <div class="p-6 pt-0 bg-surface-container-lowest">
+                <div class="w-full bg-surface-container-low h-[1px] mb-6"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">02 APR - 08 APR 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">09 APR - 14 APR 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">16 APR - 22 APR 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">17 APR - 23 APR 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">22 APR - 28 APR 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">23 APR - 29 APR 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">07 MEI - 13 MEI 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">08 MEI - 14 MEI 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">14 MEI - 20 MEI 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item shadow-primary/20 bg-primary/5">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">15 MEI - 21 MEI 2026</div><div class="text-xs text-primary font-bold uppercase mt-1">Special Promo</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,190</div></div>
+                    </a>
+                </div>
+            </div>
+        </details>
+
+        <details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors shadow-sm">
+            <summary class="list-none flex justify-between items-center p-6 cursor-pointer font-extrabold text-xl text-on-surface select-none">
+                <div class="flex items-center gap-4">
+                    <span class="bg-primary/10 text-primary w-12 h-12 flex items-center justify-center rounded-xl font-headline tracking-tighter text-sm">SUM</span>
+                    <span class="block text-primary">Musim Summer</span>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-3xl">expand_circle_down</span>
+            </summary>
+            <div class="p-6 pt-0 bg-surface-container-lowest">
+                <div class="w-full bg-surface-container-low h-[1px] mb-6"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item shadow-primary/20 bg-primary/5">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">10 JUN - 16 JUN 2026</div><div class="text-xs text-primary font-bold uppercase mt-1">Special Promo</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,190</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item shadow-primary/20 bg-primary/5">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">03 JUL - 09 JUL 2026</div><div class="text-xs text-primary font-bold uppercase mt-1">Special Promo</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,190</div></div>
+                    </a>
+                    
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">16 JUN - 22 JUN 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">17 JUL - 23 JUL 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">06 AUG - 12 AUG 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">13 AUG - 19 AUG 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">22 AUG - 28 AUG 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">16 SEP - 22 SEP 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">24 SEP - 30 SEP 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                </div>
+            </div>
+        </details>
+
+        <details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors shadow-sm">
+            <summary class="list-none flex justify-between items-center p-6 cursor-pointer font-extrabold text-xl text-on-surface select-none">
+                <div class="flex items-center gap-4">
+                    <span class="bg-primary/10 text-primary w-12 h-12 flex items-center justify-center rounded-xl font-headline tracking-tighter text-sm">AUT</span>
+                    <span class="block text-primary">Musim Autumn</span>
+                </div>
+                <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-3xl">expand_circle_down</span>
+            </summary>
+            <div class="p-6 pt-0 bg-surface-container-lowest">
+                <div class="w-full bg-surface-container-low h-[1px] mb-6"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">09 OCT - 15 OCT 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">16 OCT - 22 OCT 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">22 OCT - 28 OCT 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">23 OCT - 29 OCT 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">06 NOV - 12 NOV 2026</div><div class="text-xs font-bold text-orange-500 uppercase mt-1">Deepavali</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">07 NOV - 13 NOV 2026</div><div class="text-xs font-bold text-orange-500 uppercase mt-1">Deepavali</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">19 NOV - 25 NOV 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                    <a href="https://wa.me/601255001601" class="flex justify-between items-center p-5 bg-white rounded-xl border border-outline-variant/20 hover:border-primary hover:shadow-md transition-all group/item">
+                        <div><div class="font-headline font-extrabold text-lg text-on-surface">20 NOV - 26 NOV 2026</div></div><div class="text-right"><div class="text-xl font-extrabold text-primary">RM 4,490</div></div>
+                    </a>
+                </div>
+            </div>
+        </details>
+
+    </div>
 </div>
-</div></div></div>
 
 <div class="mt-8 border-t border-outline-variant/20 pt-8">
 <div class="mb-6 flex flex-col items-center text-center gap-4 rounded-[2rem] border border-outline-variant/20 bg-surface-container-low p-6 sm:flex-row sm:justify-between sm:text-left">
@@ -1162,13 +720,22 @@
                                 Ketua Rombongan dari Malaysia
                             </div>
 </div>
-<div class="mt-8 p-5 bg-primary/5 rounded-xl text-center flex flex-col items-center">
-    <h4 class="font-bold text-primary-container text-sm mb-3">Harga Tidak Termasuk:</h4>
-    <ul class="text-xs text-primary space-y-2 list-none">
-        <li>&bull; Insurans Perjalanan Peribadi</li>
-        <li>&bull; Caj Tipping Pembantu Tempatan (RM100/pax)</li>
-        <li>&bull; Lawatan Pilihan (Optional Tour)</li>
-    </ul>
+<div class="mt-8 p-6 bg-surface-container-low border border-outline-variant/30 rounded-2xl w-full">
+    <h4 class="font-bold text-on-surface-variant text-lg mb-4 text-center">Harga Tidak Termasuk:</h4>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto">
+        <div class="flex items-center justify-center sm:justify-start gap-2 text-sm text-center sm:text-left text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">cancel</span>
+            Insurans Perjalanan Peribadi
+        </div>
+        <div class="flex items-center justify-center sm:justify-start gap-2 text-sm text-center sm:text-left text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">cancel</span>
+            Caj Tipping (RM100/pax)
+        </div>
+        <div class="flex items-center justify-center sm:justify-start gap-2 text-sm text-center sm:text-left text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">cancel</span>
+            Lawatan Pilihan (Optional Tour)
+        </div>
+    </div>
 </div>
 </div>
 </div>
@@ -1215,72 +782,74 @@
 </section>
 
 <!-- Social Proof -->
-<section class="py-24" id="gallery">
-<div class="max-w-7xl mx-auto px-6">
-<h2 class="font-headline text-4xl font-extrabold mb-12 text-center">Trip sebenar Nusa Travel</h2>
+<section class="py-24 bg-surface" id="gallery">
+<div class="max-w-7xl mx-auto px-6 relative">
+<div class="text-center mb-10">
+<h2 class="font-headline text-4xl font-extrabold text-on-surface">Trip sebenar Nusa Travel</h2>
+<p class="text-on-surface-variant mt-2 text-lg">Ribuan peserta telah berpuas hati dengan pengalaman ini.</p>
 </div>
-<div class="relative w-full max-w-full overflow-hidden">
-    <!-- Left shadow -->
-    <div class="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-surface to-transparent z-10 pointer-events-none"></div>
-    <!-- Right shadow -->
-    <div class="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-surface to-transparent z-10 pointer-events-none"></div>
 
-    <div class="flex overflow-x-auto gap-6 px-6 md:px-32 pb-12 pt-4 snap-x snap-mandatory hide-scrollbar">
-        <div class="min-w-[85vw] md:min-w-[400px] snap-center rounded-[2rem] overflow-hidden editorial-shadow shrink-0 transition-transform duration-500 hover:-translate-y-2">
-            <img alt="Traveler group 1" class="w-full h-[300px] md:h-[500px] object-cover" src="assets/images/trip_1.jpeg"/>
+<div class="relative w-full overflow-hidden group">
+    <!-- Navigation Buttons -->
+    <button onclick="document.getElementById('galleryScroll').scrollBy({left: -350, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/90 shadow-xl text-primary w-12 h-12 rounded-full flex items-center justify-center hover:bg-white transition-transform hover:scale-110 active:scale-95 opacity-80 md:opacity-0 group-hover:opacity-100 border border-primary/10">
+        <span class="material-symbols-outlined font-bold">arrow_back_ios_new</span>
+    </button>
+    <button onclick="document.getElementById('galleryScroll').scrollBy({left: 350, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/90 shadow-xl text-primary w-12 h-12 rounded-full flex items-center justify-center hover:bg-white transition-transform hover:scale-110 active:scale-95 opacity-80 md:opacity-0 group-hover:opacity-100 border border-primary/10">
+        <span class="material-symbols-outlined font-bold">arrow_forward_ios</span>
+    </button>
+
+    <div class="absolute left-0 top-0 bottom-0 w-8 md:w-24 bg-gradient-to-r from-surface to-transparent z-10 pointer-events-none"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-8 md:w-24 bg-gradient-to-l from-surface to-transparent z-10 pointer-events-none"></div>
+
+    <div id="galleryScroll" class="flex overflow-x-auto gap-4 md:gap-6 px-4 md:px-24 snap-x snap-mandatory hide-scrollbar py-4">
+        <div class="min-w-[85vw] md:min-w-[500px] snap-center rounded-[2rem] overflow-hidden shadow-xl shrink-0 transition-transform duration-500 hover:scale-[1.02]">
+            <img alt="Traveler group 1" class="w-full h-[350px] md:h-[500px] object-cover" src="assets/images/trip_1.jpeg"/>
         </div>
-        <div class="min-w-[85vw] md:min-w-[400px] snap-center rounded-[2rem] overflow-hidden editorial-shadow shrink-0 transition-transform duration-500 hover:-translate-y-2">
-            <img alt="Traveler group 2" class="w-full h-[300px] md:h-[500px] object-cover" src="assets/images/trip_2.jpeg"/>
+        <div class="min-w-[85vw] md:min-w-[500px] snap-center rounded-[2rem] overflow-hidden shadow-xl shrink-0 transition-transform duration-500 hover:scale-[1.02]">
+            <img alt="Traveler group 2" class="w-full h-[350px] md:h-[500px] object-cover" src="assets/images/trip_2.jpeg"/>
         </div>
-        <div class="min-w-[85vw] md:min-w-[400px] snap-center rounded-[2rem] overflow-hidden editorial-shadow shrink-0 transition-transform duration-500 hover:-translate-y-2">
-            <img alt="Traveler group 3" class="w-full h-[300px] md:h-[500px] object-cover" src="assets/images/trip_3.jpeg"/>
+        <div class="min-w-[85vw] md:min-w-[500px] snap-center rounded-[2rem] overflow-hidden shadow-xl shrink-0 transition-transform duration-500 hover:scale-[1.02]">
+            <img alt="Traveler group 3" class="w-full h-[350px] md:h-[500px] object-cover" src="assets/images/trip_3.jpeg"/>
         </div>
-        <div class="min-w-[85vw] md:min-w-[400px] snap-center rounded-[2rem] overflow-hidden editorial-shadow shrink-0 transition-transform duration-500 hover:-translate-y-2">
-            <img alt="Traveler group 4" class="w-full h-[300px] md:h-[500px] object-cover" src="assets/images/trip_4.jpeg"/>
+        <div class="min-w-[85vw] md:min-w-[500px] snap-center rounded-[2rem] overflow-hidden shadow-xl shrink-0 transition-transform duration-500 hover:scale-[1.02]">
+            <img alt="Traveler group 4" class="w-full h-[350px] md:h-[500px] object-cover" src="assets/images/trip_4.jpeg"/>
         </div>
+    </div>
 </div>
 </div>
 </section>
 
 <!-- Policy -->
-<section class="bg-white py-24 px-6" id="policy">
-<div class="max-w-6xl mx-auto">
+<section class="bg-surface py-24 px-6" id="policy">
+<div class="max-w-4xl mx-auto">
 <div class="text-center mb-12">
-<span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Policy Nusa</span>
+<span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Maklumat Penting</span>
 <h2 class="mt-4 font-headline text-4xl font-extrabold text-on-surface">Polisi & Terma Pelanggan</h2>
-<p class="mx-auto mt-4 max-w-3xl text-base text-on-surface-variant md:text-lg">Sorotan ringkas berdasarkan PDF Terma dan Syarat bagi memudahkan penelitian perkhidmatan kami.</p>
 </div>
-<div class="grid gap-6 lg:grid-cols-3">
-<div class="rounded-[2rem] border border-outline-variant/20 bg-surface-container-low p-6 editorial-shadow flex flex-col items-center text-center">
-<p class="text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Pembayaran</p>
-<h3 class="mt-3 font-headline text-2xl font-extrabold">Transaksi & Baki</h3>
-<ul class="mt-4 space-y-3 text-sm leading-6 text-on-surface-variant list-none">
-<li>&bull; Deposit RM1,000 setiap peserta (Tidak boleh dikembalikan).</li>
-<li>&bull; 50% bayaran dijelaskan 90 hari sebelum penerbangan.</li>
-<li>&bull; Pembayaran penuh selewatnya 45 hari sebelum bertolak.</li>
-<li>&bull; Kelewatan mungkin menyebabkan pembatalan sedia ada.</li>
-</ul>
-</div>
-<div class="rounded-[2rem] border border-outline-variant/20 bg-surface-container-low p-6 editorial-shadow flex flex-col items-center text-center">
-<p class="text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Pembatalan</p>
-<h3 class="mt-3 font-headline text-2xl font-extrabold">Polisi Semasa</h3>
-<ul class="mt-4 space-y-3 text-sm leading-6 text-on-surface-variant list-none">
-<li>&bull; Segala pembatalan perlukan notis emel/bertulis rasmi.</li>
-<li>&bull; Jika tiket pesawat sudah dicetak, tiada pemulangan tunai.</li>
-<li>&bull; Pengecualian hanya untuk kematian/perubatan berdokumen.</li>
-<li>&bull; Tiada refund jika notis di bawah 15 hari dari tarikh.</li>
-</ul>
-</div>
-<div class="rounded-[2rem] border border-outline-variant/20 bg-surface-container-low p-6 editorial-shadow flex flex-col items-center text-center">
-<p class="text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Maklumat Lanjut</p>
-<h3 class="mt-3 font-headline text-2xl font-extrabold">Tersirat & Terancang</h3>
-<ul class="mt-4 space-y-3 text-sm leading-6 text-on-surface-variant list-none">
-<li>&bull; Nilai tertakluk kepada perubahan pasaran semasa (Cuti Umum).</li>
-<li>&bull; Syarikat berhak mengubah jadual sekiranya kecemasan.</li>
-<li>&bull; Peserta mesti sah memiliki pasport melebihi waktu 6 bulan.</li>
-<li>&bull; Trip akan dibatalkan dengan pulangan jika peserta kurang 15 pax.</li>
-</ul>
-</div>
+<div class="space-y-4">
+    <div class="bg-white p-6 rounded-2xl editorial-shadow border border-outline-variant/10">
+        <h3 class="font-headline text-lg font-bold text-primary mb-3 flex items-center gap-2"><span class="material-symbols-outlined">payments</span>Polisi Pembayaran</h3>
+        <ul class="space-y-2 text-sm text-on-surface-variant">
+            <li class="flex gap-3"><span class="text-primary">&bull;</span> Deposit RM1,000 setiap peserta (Tidak boleh dikembalikan / Non-refundable).</li>
+            <li class="flex gap-3"><span class="text-primary">&bull;</span> 50% bayaran harus dijelaskan 90 hari sebelum penerbangan.</li>
+            <li class="flex gap-3"><span class="text-primary">&bull;</span> Pembayaran penuh wajib selewat-lewatnya 45 hari sebelum bertolak.</li>
+        </ul>
+    </div>
+    <div class="bg-white p-6 rounded-2xl editorial-shadow border border-outline-variant/10">
+        <h3 class="font-headline text-lg font-bold text-primary mb-3 flex items-center gap-2"><span class="material-symbols-outlined">event_busy</span>Polisi Pembatalan</h3>
+        <ul class="space-y-2 text-sm text-on-surface-variant">
+            <li class="flex gap-3"><span class="text-primary">&bull;</span> Segala permohonan pembatalan haruslah melalui notis emel/bertulis rasmi.</li>
+            <li class="flex gap-3"><span class="text-primary">&bull;</span> Sekiranya tiket penerbangan sudah dicetak, tiada sebarang pemulangan tunai dibenarkan.</li>
+            <li class="flex gap-3"><span class="text-primary">&bull;</span> Pengecualian hanya dipertimbangkan untuk kematian/perubatan berdokumen.</li>
+        </ul>
+    </div>
+    <div class="bg-white p-6 rounded-2xl editorial-shadow border border-outline-variant/10">
+        <h3 class="font-headline text-lg font-bold text-primary mb-3 flex items-center gap-2"><span class="material-symbols-outlined">info</span>Maklumat Tambahan</h3>
+        <ul class="space-y-2 text-sm text-on-surface-variant">
+            <li class="flex gap-3"><span class="text-primary">&bull;</span> Peserta mesti memastikan pasport sah melebihi 6 bulan dari tarikh kepulangan.</li>
+            <li class="flex gap-3"><span class="text-primary">&bull;</span> Syarikat berhak mengubah spesifikasi atur cara berdasarkan situasi semasa atau kecemasan.</li>
+        </ul>
+    </div>
 </div>
 </div>
 </section>
@@ -1375,7 +944,7 @@
 <h2 class="font-headline text-5xl md:text-6xl font-extrabold mb-8">Kalau kau serious nak pergi Yunnan tahun ni,</h2>
 <p class="text-2xl font-bold text-primary italic mb-4">Jangan tunggu.</p>
 <p class="text-xl mb-12 text-zinc-400">Seat limited setiap trip. Sekali penuh, kau kena tunggu tahun depan.</p>
-<a href="https://wa.me/601111111111" class="inline-block bg-primary text-white px-12 py-5 rounded-full font-headline text-2xl font-extrabold editorial-shadow hover:scale-110 active:scale-95 transition-all">
+<a href="https://wa.me/601255001601" class="inline-block bg-primary text-white px-12 py-5 rounded-full font-headline text-2xl font-extrabold editorial-shadow hover:scale-110 active:scale-95 transition-all">
                 WhatsApp Sekarang
             </a>
 </div>
@@ -1399,7 +968,7 @@
 <!-- BottomNavBar (Mobile) -->
 <div class="fixed bottom-0 w-full z-50 md:hidden bg-white/90 dark:bg-zinc-900/90 backdrop-blur-lg border-t border-zinc-200/50 shadow-[0_-8px_32px_rgba(0,0,0,0.06)]">
 <div class="flex justify-around items-center h-20 pb-safe px-4">
-<a href="https://wa.me/601111111111" class="flex flex-col items-center justify-center text-zinc-500 active:bg-zinc-100">
+<a href="https://wa.me/601255001601" class="flex flex-col items-center justify-center text-zinc-500 active:bg-zinc-100">
 <span class="material-symbols-outlined" data-icon="chat">chat</span>
 <span class="font-manrope font-semibold text-[10px] uppercase tracking-widest mt-1">WhatsApp</span>
 </a>
@@ -1414,7 +983,7 @@
 </div>
 
 <!-- Floating WhatsApp (Desktop) -->
-<a class="hidden md:flex fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform" href="https://wa.me/601111111111">
+<a class="hidden md:flex fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform" href="https://wa.me/601255001601">
 <svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24">
 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
 </svg>
