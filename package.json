@@ -1,4 +1,12 @@
 {
+  "name": "yunnan-landing-page",
+  "private": true,
+  "scripts": {
+    "pdf:read": "node scripts/read_pdf.js",
+    "build:html": "node scripts/build3.js",
+    "fix:html": "node scripts/fix_html.js",
+    "fix:colors": "node scripts/fix_colors.js"
+  },
   "dependencies": {
     "pdf-parse": "^2.4.5"
   }

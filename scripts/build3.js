@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 const premierDates = [
     {date: '25 MAR 2026 - 31 MAR 2026', title: 'Cuti Sekolah + Raya Eid Fitri', price: '4,790', full: '4,890'},
@@ -659,5 +660,5 @@ ${makeHtml(promoDates)}
 </svg>
 </a>
 </body></html>`;
-fs.writeFileSync('c:/Users/User/OneDrive/ZACK VIBE CODING PROJECT/LANDING PAGE NUSATRAVEL/index.html', html);
+fs.writeFileSync(path.join(__dirname, '..', 'index.html'), html);
 console.log('Done');

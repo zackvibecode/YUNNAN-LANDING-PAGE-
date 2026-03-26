@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const filePath = path.join(__dirname, 'index.html');
+const filePath = path.join(__dirname, '..', 'index.html');
 let content = fs.readFileSync(filePath, 'utf8');
 
 // Replace all hardcoded Tailwind reds with our dynamic primary token
@@ -14,8 +14,8 @@ content = content.replace(/bg-red-50/g, 'bg-primary/5');
 
 // Make the nav Logo slightly bigger as 'h-8' might be small
 content = content.replace(
-    '<img src="images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-8 w-auto" />',
-    '<img src="images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-10 w-auto" />'
+    '<img src="assets/images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-8 w-auto" />',
+    '<img src="assets/images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-10 w-auto" />'
 );
 
 fs.writeFileSync(filePath, content, 'utf8');

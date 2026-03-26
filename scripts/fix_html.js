@@ -1,23 +1,23 @@
 const fs = require('fs');
 const path = require('path');
 
-const filePath = path.join(__dirname, 'index.html');
+const filePath = path.join(__dirname, '..', 'index.html');
 let content = fs.readFileSync(filePath, 'utf8');
 
 // 1. Replace Top Logo
 content = content.replace(
     '<span class="text-xl font-extrabold tracking-tighter text-zinc-900 dark:text-white font-headline">NUSA TRAVEL</span>',
-    '<img src="images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-8 w-auto" />'
+    '<img src="assets/images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-8 w-auto" />'
 );
 
 // 2. Change maybank-logo.svg to maybank-logo-png-transparent.png and remove bg color
 content = content.replace(
     /<img alt="Maybank logo" class="h-10 w-auto rounded-lg bg-\[#ffcd00\] p-1\.5" src="images\/maybank-logo\.svg"\/>/g,
-    '<img alt="Maybank logo" class="h-10 w-auto" src="images/maybank-logo-png-transparent.png"/>'
+    '<img alt="Maybank logo" class="h-10 w-auto" src="assets/images/maybank-logo-png-transparent.png"/>'
 );
 content = content.replace(
-    /<img alt="Maybank logo" class="h-10 w-auto" src="images\/maybank-logo\.svg"\/>/g,
-    '<img alt="Maybank logo" class="h-10 w-auto" src="images/maybank-logo-png-transparent.png"/>'
+    /<img alt="Maybank logo" class="h-10 w-auto" src="assets\/images\/maybank-logo\.svg"\/>/g,
+    '<img alt="Maybank logo" class="h-10 w-auto" src="assets/images/maybank-logo-png-transparent.png"/>'
 );
 
 // 3. Font Montserrat

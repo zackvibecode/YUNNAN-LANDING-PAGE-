@@ -7,19 +7,19 @@ with open(path, 'r', encoding='utf-8') as f:
 # 1. Replace Top Logo
 content = re.sub(
     r'<span class="text-xl font-extrabold tracking-tighter text-zinc-900 dark:text-white font-headline">NUSA TRAVEL</span>', 
-    r'<img src="images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-12 w-auto" />', 
+    r'<img src="assets/images/LogoNusa[3]-01.png" alt="NUSA TRAVEL" class="h-12 w-auto" />', 
     content
 )
 
 # 2. Change maybank-logo.svg to maybank-logo-png-transparent.png and remove bg color
 content = re.sub(
-    r'<img alt="Maybank logo" class="h-10 w-auto rounded-lg bg-\[#ffcd00\] p-1\.5" src="images/maybank-logo\.svg"/>', 
-    r'<img alt="Maybank logo" class="h-12 w-auto" src="images/maybank-logo-png-transparent.png"/>', 
+    r'<img alt="Maybank logo" class="h-10 w-auto rounded-lg bg-\[#ffcd00\] p-1\.5" src="assets/images/maybank-logo\.svg"/>', 
+    r'<img alt="Maybank logo" class="h-12 w-auto" src="assets/images/maybank-logo-png-transparent.png"/>', 
     content
 )
 content = re.sub(
-    r'<img alt="Maybank logo" class="h-10 w-auto" src="images/maybank-logo\.svg"/>', 
-    r'<img alt="Maybank logo" class="h-12 w-auto" src="images/maybank-logo-png-transparent.png"/>', 
+    r'<img alt="Maybank logo" class="h-10 w-auto" src="assets/images/maybank-logo\.svg"/>', 
+    r'<img alt="Maybank logo" class="h-12 w-auto" src="assets/images/maybank-logo-png-transparent.png"/>', 
     content
 )
 
