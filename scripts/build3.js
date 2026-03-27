@@ -24,10 +24,10 @@ const premierDates = [
 ];
 
 const schoolHolidayWindows = [
-    {label: 'Cuti 1', period: '19 MAR 2026 - 29 MAR 2026'},
-    {label: 'Cuti 2', period: '23 MAY 2026 - 07 JUN 2026'},
-    {label: 'Cuti 3', period: '29 AUG 2026 - 06 SEP 2026'},
-    {label: 'Cuti 4', period: '05 DEC 2026 - 31 DEC 2026'},
+    {label: 'CUTI 1', title: 'Cuti Sekolah 1', start: '19 MAR 2026', end: '29 MAR 2026', period: '19 MAR 2026 - 29 MAR 2026'},
+    {label: 'CUTI 2', title: 'Cuti Sekolah 2', start: '23 MAY 2026', end: '07 JUN 2026', period: '23 MAY 2026 - 07 JUN 2026'},
+    {label: 'CUTI 3', title: 'Cuti Sekolah 3', start: '29 AUG 2026', end: '06 SEP 2026', period: '29 AUG 2026 - 06 SEP 2026'},
+    {label: 'CUTI 4', title: 'Cuti Sekolah 4', start: '05 DIS 2026', end: '31 DIS 2026', period: '05 DIS 2026 - 31 DIS 2026'},
 ];
 
 const promoDates = [
@@ -61,46 +61,108 @@ const promoDates = [
     {date: '20 NOV 2026 - 26 NOV 2026', title: 'Musim Autumn', price: '4,490', full: '4,590'},
 ];
 
-function getHolidayWindow(date) {
-    if (date.includes('MAR 2026')) return schoolHolidayWindows[0];
-    if (date.includes('MEI 2026') || date.includes('JUN 2026')) return schoolHolidayWindows[1];
-    if (date.includes('AUG 2026') || date.includes('SEP 2026')) return schoolHolidayWindows[2];
-    if (date.includes('DEC 2026')) return schoolHolidayWindows[3];
-    return null;
+const premierHolidayGroups = [
+    { holiday: schoolHolidayWindows[0], dates: premierDates.slice(0, 1) },
+    { holiday: schoolHolidayWindows[1], dates: premierDates.slice(1, 6) },
+    { holiday: schoolHolidayWindows[2], dates: premierDates.slice(6, 10) },
+    { holiday: schoolHolidayWindows[3], dates: premierDates.slice(10) },
+];
+
+function splitDateRange(dateRange) {
+    const [depart, arrival] = dateRange.split(' - ');
+    return { depart, arrival };
 }
 
-function makeHtml(dates) {
-    return dates.map(d => {
-        const holidayWindow = getHolidayWindow(d.date);
-        const hoverLabel = holidayWindow
-            ? `${holidayWindow.label}: ${holidayWindow.period}`
-            : 'Tarikh promo biasa 2026';
-        return `
-<div class="group relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-<div class="flex flex-col items-center gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left">
-<div class="space-y-2">
-<div class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">${d.title}</div>
-<span class="block font-headline text-xl font-extrabold leading-tight">${d.date}</span>
-<p class="text-sm text-on-surface-variant">${hoverLabel}</p>
+function stripYear(dateText) {
+    return dateText.replace(' 2026', '');
+}
+
+function getVisibleNote(title) {
+    if (title === 'Cuti Sekolah') return 'Dalam tempoh cuti sekolah';
+    if (title.startsWith('Cuti Sekolah + ')) return title.replace('Cuti Sekolah + ', '');
+    return title;
+}
+
+function getSecondaryNote(title) {
+    if (title.startsWith('Cuti Sekolah + ')) return 'Dalam tempoh cuti sekolah';
+    return '';
+}
+
+function makeDateRow(item, hoverText) {
+    const { depart, arrival } = splitDateRange(item.date);
+    const primaryNote = getVisibleNote(item.title);
+    const secondaryNote = getSecondaryNote(item.title);
+    return `
+<div class="group/row relative rounded-2xl border border-outline-variant/20 bg-white px-4 py-4 transition-all duration-500 ease-out hover:-translate-y-0.5 hover:border-primary/35 hover:shadow-[0_18px_40px_-22px_rgba(186,0,19,0.45)] md:px-5">
+<div class="grid gap-3 md:grid-cols-[1.15fr_1.15fr_1fr_1fr_1.5fr] md:items-center">
+<div>
+<p class="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-500 md:hidden">Berlepas</p>
+<p class="font-headline text-lg font-extrabold text-on-surface">${depart}</p>
 </div>
-<div class="min-w-[130px] rounded-2xl bg-white px-5 py-4 text-center editorial-shadow">
-<p class="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 line-through">RM ${d.full}</p>
-<span class="mt-1 block text-2xl font-extrabold text-primary">RM ${d.price}</span>
-<p class="mt-1 text-[10px] font-bold uppercase tracking-[0.24em] text-green-600">Available</p>
+<div>
+<p class="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-500 md:hidden">Ketibaan</p>
+<p class="font-headline text-lg font-extrabold text-on-surface">${arrival}</p>
+</div>
+<div>
+<p class="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-500 md:hidden">Harga Asal</p>
+<p class="text-base font-bold text-zinc-400 line-through">RM ${item.full}</p>
+</div>
+<div>
+<p class="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-500 md:hidden">Harga Promo</p>
+<p class="text-xl font-extrabold text-primary">RM ${item.price}</p>
+</div>
+<div>
+<p class="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-500 md:hidden">Nota</p>
+<p class="text-sm font-semibold text-on-surface">${primaryNote}</p>
+${secondaryNote ? `<p class="mt-1 text-xs uppercase tracking-[0.18em] text-primary">${secondaryNote}</p>` : ''}
 </div>
 </div>
-<div class="mt-4 rounded-2xl border border-primary/10 bg-primary/[0.03] p-4 text-center md:hidden">
-<p class="text-[11px] font-bold uppercase tracking-[0.22em] text-primary">Detail Tarikh</p>
-<p class="mt-2 text-sm font-semibold text-on-surface">${hoverLabel}</p>
-</div>
-<div class="pointer-events-none absolute left-1/2 top-full z-20 hidden w-[320px] -translate-x-1/2 translate-y-4 rounded-2xl border border-primary/20 bg-white p-4 text-left opacity-0 editorial-shadow transition-all duration-300 md:block md:group-hover:translate-y-2 md:group-hover:opacity-100">
+<div class="mt-3 rounded-xl bg-primary/[0.04] px-3 py-2 text-xs font-medium text-on-surface-variant md:hidden">${hoverText}</div>
+<div class="pointer-events-none absolute left-1/2 top-full z-20 hidden w-[320px] -translate-x-1/2 translate-y-4 rounded-2xl border border-primary/15 bg-white p-4 opacity-0 editorial-shadow transition-all duration-500 ease-out md:block md:group-hover/row:translate-y-2 md:group-hover/row:opacity-100">
 <p class="text-[11px] font-bold uppercase tracking-[0.22em] text-primary">Hover Detail</p>
-<p class="mt-2 text-sm font-semibold text-on-surface">${d.title}</p>
-<p class="mt-1 text-sm text-on-surface-variant">${hoverLabel}</p>
-<p class="mt-3 text-xs leading-relaxed text-on-surface-variant">Rujukan terus daripada PDF Yunnan 2026 untuk premier date dan tempoh cuti sekolah.</p>
+<p class="mt-2 text-sm font-semibold text-on-surface">${hoverText}</p>
+<p class="mt-2 text-xs leading-relaxed text-on-surface-variant">Tarikh dan harga ini disusun semula ikut PDF Yunnan 2026.</p>
 </div>
 </div>`;
-    }).join('');
+}
+
+function makePremierGroupsHtml() {
+    return premierHolidayGroups.map(({ holiday, dates }) => `
+<details class="group rounded-[1.75rem] border border-outline-variant/25 bg-surface-container-lowest shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg" ${holiday.label === 'CUTI 1' ? 'open' : ''}>
+<summary class="list-none cursor-pointer p-5 md:p-6">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-start gap-4">
+<span class="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 font-headline text-sm font-black tracking-[0.14em] text-primary">${holiday.label}</span>
+<div>
+<p class="text-[11px] font-bold uppercase tracking-[0.24em] text-primary">Cuti Penggal</p>
+<h3 class="mt-1 font-headline text-2xl font-extrabold text-on-surface">${holiday.title}</h3>
+<div class="mt-3 flex flex-wrap gap-2 text-xs font-bold text-on-surface-variant md:text-sm">
+<span class="rounded-full bg-surface-container-low px-3 py-1.5">MULA: ${holiday.start}</span>
+<span class="rounded-full bg-surface-container-low px-3 py-1.5">TAMAT: ${holiday.end}</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-primary">${dates.length} TARIKH</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined mt-1 text-3xl text-primary transition-transform duration-300 group-open:rotate-180">expand_circle_down</span>
+</div>
+</summary>
+<div class="px-5 pb-5 md:px-6 md:pb-6">
+<div class="mb-4 hidden rounded-2xl bg-surface-container-low px-5 py-3 md:grid md:grid-cols-[1.15fr_1.15fr_1fr_1fr_1.5fr] md:gap-3">
+<p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Berlepas</p>
+<p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Ketibaan</p>
+<p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Harga Asal</p>
+<p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Harga Promo</p>
+<p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Nota</p>
+</div>
+<div class="space-y-3">
+${dates.map(item => makeDateRow(item, `${holiday.label} | ${holiday.period}`)).join('')}
+</div>
+</div>
+</details>`).join('');
+}
+
+function makePromoRowsHtml() {
+    return promoDates.map(item => makeDateRow(item, 'Tarikh pelepasan rasmi daripada PDF Yunnan 2026')).join('');
 }
 
 let html = `<!DOCTYPE html>
@@ -414,41 +476,29 @@ let html = `<!DOCTYPE html>
 <div class="mx-auto max-w-6xl">
 <div class="text-center mb-10">
 <span class="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Tarikh 2026</span>
-<h2 class="mt-4 font-headline text-4xl font-extrabold text-on-surface md:text-5xl">Tarikh lebih center, lebih kemas, terus nampak waktu terbaik</h2>
-<p class="mx-auto mt-4 max-w-3xl text-base text-on-surface-variant md:text-lg">Susun ikut PDF Yunnan 2026. Hover pada kad untuk lihat detail premier date dan tempoh cuti sekolah yang berkaitan.</p>
+<h2 class="mt-4 font-headline text-4xl font-extrabold text-on-surface md:text-5xl">Susunan tarikh ikut PDF Yunnan 2026</h2>
+<p class="mx-auto mt-4 max-w-3xl text-base text-on-surface-variant md:text-lg">Tarikh premier dan tarikh pelepasan biasa disusun semula mengikut format PDF supaya lebih kemas, senang scan, dan tepat sebijik pada tarikh.</p>
 </div>
 <div class="bg-white rounded-[2rem] editorial-shadow overflow-visible border border-outline-variant/20">
 <div class="bg-gradient-to-br from-primary to-red-700 p-10 text-center text-white md:p-12">
 <h2 class="font-headline text-3xl font-extrabold mb-4">Harga bermula dari RM4,190</h2>
-<p class="mx-auto max-w-2xl text-white/80">Pilih tarikh yang paling ngam, sama ada premier date atau tarikh promo biasa.</p>
+<p class="mx-auto max-w-2xl text-white/80">Pilih tarikh yang paling ngam, sama ada premier date semasa cuti sekolah atau tarikh pelepasan biasa sepanjang tahun.</p>
 </div>
 <div class="p-6 md:p-8">
 
 <div class="grid gap-4 md:grid-cols-2">
-<div class="group relative rounded-3xl border border-primary/15 bg-primary/[0.04] p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+<div class="rounded-3xl border border-primary/15 bg-primary/[0.04] p-6 text-center">
 <p class="text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Premier Date</p>
-<h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">Tarikh peak demand 2026</h3>
-<p class="mt-3 text-sm text-on-surface-variant">Slot cuti sekolah dan musim paling cepat penuh.</p>
-<div class="mt-4 inline-flex items-center rounded-full bg-white px-4 py-2 text-xs font-bold text-primary editorial-shadow">Hover untuk detail</div>
-<p class="mt-4 text-sm text-on-surface-variant md:hidden">Rujukan premier date terus daripada PDF Yunnan 2026.</p>
-<div class="pointer-events-none absolute left-1/2 top-full z-20 hidden w-[340px] -translate-x-1/2 translate-y-4 rounded-3xl border border-primary/20 bg-white p-5 text-left opacity-0 editorial-shadow transition-all duration-300 md:block md:group-hover:translate-y-2 md:group-hover:opacity-100">
-<p class="text-[11px] font-bold uppercase tracking-[0.22em] text-primary">Premier Date 2026</p>
-<p class="mt-2 text-sm text-on-surface-variant">PDF Yunnan 2026 senaraikan tarikh ini sebagai premier date dengan slot paling panas untuk dipilih awal.</p>
+<h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">Tarikh premier ikut blok cuti</h3>
+<p class="mt-3 text-sm text-on-surface-variant">Disusun ikut CUTI 1 sampai CUTI 4 seperti dalam PDF, lengkap dengan nota raya dan harga asal/promo.</p>
+<div class="mt-4 inline-flex items-center rounded-full bg-white px-4 py-2 text-xs font-bold text-primary editorial-shadow">Hover row untuk detail</div>
 </div>
-</div>
-<div class="group relative rounded-3xl border border-outline-variant/20 bg-surface p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+<div class="rounded-3xl border border-outline-variant/20 bg-surface p-6 text-center">
 <p class="text-[11px] font-bold uppercase tracking-[0.28em] text-zinc-700">Cuti Sekolah</p>
 <h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">4 tempoh rasmi dalam PDF</h3>
-<p class="mt-3 text-sm text-on-surface-variant">Saya ikut blok cuti 1 hingga cuti 4 dari fail Yunnan yang kau suruh tengok.</p>
-<div class="mt-4 inline-flex items-center rounded-full bg-white px-4 py-2 text-xs font-bold text-zinc-700 editorial-shadow">Hover untuk detail</div>
-<div class="mt-4 space-y-2 text-sm text-on-surface-variant md:hidden">
-${schoolHolidayWindows.map(holiday => `<div class="rounded-2xl bg-white px-3 py-2"><span class="font-bold text-on-surface">${holiday.label}</span><br/>${holiday.period}</div>`).join('')}
-</div>
-<div class="pointer-events-none absolute left-1/2 top-full z-20 hidden w-[360px] -translate-x-1/2 translate-y-4 rounded-3xl border border-outline-variant/20 bg-white p-5 text-left opacity-0 editorial-shadow transition-all duration-300 md:block md:group-hover:translate-y-2 md:group-hover:opacity-100">
-<p class="text-[11px] font-bold uppercase tracking-[0.22em] text-primary">Cuti Sekolah 2026</p>
-<div class="mt-3 space-y-2 text-sm text-on-surface-variant">
-${schoolHolidayWindows.map(holiday => `<div class="rounded-2xl bg-surface-container-low px-3 py-2"><span class="font-bold text-on-surface">${holiday.label}</span><br/>${holiday.period}</div>`).join('')}
-</div>
+<p class="mt-3 text-sm text-on-surface-variant">Setiap tempoh dipaparkan sekali sahaja supaya tak ada lagi duplicate mention untuk cuti penggal 1 hingga 4.</p>
+<div class="mt-5 grid gap-3 text-left sm:grid-cols-2">
+${schoolHolidayWindows.map(holiday => `<div class="rounded-2xl border border-outline-variant/20 bg-white px-4 py-3"><p class="text-[11px] font-bold uppercase tracking-[0.22em] text-primary">${holiday.label}</p><p class="mt-1 font-semibold text-on-surface">${holiday.title}</p><p class="mt-1 text-sm text-on-surface-variant">${holiday.period}</p></div>`).join('')}
 </div>
 </div>
 </div>
@@ -458,12 +508,12 @@ ${schoolHolidayWindows.map(holiday => `<div class="rounded-2xl bg-surface-contai
     <button onclick="document.getElementById('promoTab').classList.add('active'); document.getElementById('premierTab').classList.remove('active'); this.classList.remove('bg-surface','text-primary'); this.classList.add('bg-primary','text-white'); document.getElementById('btnPremier').classList.remove('bg-primary','text-white'); document.getElementById('btnPremier').classList.add('bg-surface','text-primary');" id="btnPromo" class="px-6 py-3 rounded-full font-bold bg-surface text-primary border border-primary/20 transition-colors">Promo Dates</button>
 </div>
 
-<div id="premierTab" class="tab-content active"><div class="mt-6 rounded-[2rem] bg-surface-container-low p-4 md:p-6"><div class="mb-5 text-center"><p class="text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Premier Date 2026</p><h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">Tarikh cuti sekolah dan demand paling tinggi</h3></div><div class="space-y-3 max-h-[620px] overflow-y-auto pr-2 pb-2 custom-scrollbar">
-${makeHtml(premierDates)}
+<div id="premierTab" class="tab-content active"><div class="mt-6 rounded-[2rem] bg-surface-container-low p-4 md:p-6"><div class="mb-5 text-center"><p class="text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Premier Date 2026</p><h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">Tarikh premier ikut CUTI 1 hingga CUTI 4</h3></div><div class="space-y-4 max-h-[720px] overflow-y-auto pr-2 pb-2 custom-scrollbar">
+${makePremierGroupsHtml()}
 </div></div></div>
 
-<div id="promoTab" class="tab-content"><div class="mt-6 rounded-[2rem] bg-surface-container-low p-4 md:p-6"><div class="mb-5 text-center"><p class="text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Tarikh Pelepasan 2026</p><h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">Pilihan promo biasa sepanjang tahun</h3></div><div class="space-y-3 max-h-[620px] overflow-y-auto pr-2 pb-2 custom-scrollbar">
-${makeHtml(promoDates)}
+<div id="promoTab" class="tab-content"><div class="mt-6 rounded-[2rem] bg-surface-container-low p-4 md:p-6"><div class="mb-5 text-center"><p class="text-[11px] font-bold uppercase tracking-[0.28em] text-primary">Tarikh Pelepasan 2026</p><h3 class="mt-2 font-headline text-2xl font-extrabold text-on-surface">Senarai tarikh pelepasan rasmi seperti PDF</h3></div><div class="mb-4 hidden rounded-2xl bg-white px-5 py-3 md:grid md:grid-cols-[1.15fr_1.15fr_1fr_1fr_1.5fr] md:gap-3"><p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Berlepas</p><p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Ketibaan</p><p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Harga Asal</p><p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Harga Promo</p><p class="text-[11px] font-bold uppercase tracking-[0.22em] text-zinc-500">Nota</p></div><div class="space-y-3 max-h-[720px] overflow-y-auto pr-2 pb-2 custom-scrollbar">
+${makePromoRowsHtml()}
 </div></div></div>
 
 <div class="mt-8 border-t border-outline-variant/20 pt-8">
