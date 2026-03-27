@@ -5,9 +5,14 @@
     "pdf:read": "node scripts/read_pdf.js",
     "build:html": "node scripts/build3.js",
     "fix:html": "node scripts/fix_html.js",
-    "fix:colors": "node scripts/fix_colors.js"
+    "fix:colors": "node scripts/fix_colors.js",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "dependencies": {
     "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "wrangler": "^4.77.0"
   }
 }
