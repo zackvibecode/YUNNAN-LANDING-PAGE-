@@ -3,7 +3,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Nusa Travel | Pakej Yunnan 7H5M 2026</title>
-<link rel="icon" type="image/png" href="assets/images/logo-nusa-baru.png"/>
+<link rel="icon" type="image/png" id="dynamic-favicon" href="assets/images/logo-nusa-baru.png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet"/>
@@ -85,13 +85,29 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #a1a1aa; }
         @keyframes fadeIn { from { opacity: 0; transform:translateY(10px); } to { opacity: 1; transform:translateY(0); } }
     </style>
+    <script>
+      window.addEventListener('load', () => {
+        const img = new Image();
+        img.src = 'assets/images/logo-nusa-baru.png';
+        img.onload = () => {
+          const canvas = document.createElement('canvas');
+          const size = Math.min(img.width, img.height);
+          canvas.width = size;
+          canvas.height = size;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, (img.width - size)/2, (img.height - size)/2, size, size, 0, 0, size, size);
+          const link = document.getElementById('dynamic-favicon');
+          if(link) link.href = canvas.toDataURL('image/png');
+        };
+      });
+    </script>
 </head>
 <body class="bg-surface font-body text-on-surface">
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-sm">
 <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
 <a href="#" class="flex items-center gap-3">
-    <img src="assets/images/logo-nusa-baru.png" alt="Nusa Travel Logo" class="h-10 w-auto object-contain" />
+    <img src="assets/images/logo-nusa-baru.png" alt="Nusa Travel Logo" class="h-10 w-10 object-cover" style="object-position: center; border-radius: 50%;" />
     <span class="text-xl font-extrabold tracking-tighter text-zinc-900 dark:text-white font-headline">NUSA TRAVEL</span>
 </a>
 <div class="hidden md:flex items-center space-x-8">
