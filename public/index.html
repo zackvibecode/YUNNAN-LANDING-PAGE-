@@ -116,7 +116,7 @@
                     PENGALAMAN YUNNAN 7H5M YANG <span class="text-primary">EKSKLUSIF</span>, <span class="text-primary">TERSUSUN</span> & <span class="text-primary">MUDAH DIIKUTI</span>
 </h1>
 <p class="text-2xl font-bold text-on-surface-variant mb-4">
-                    Dari <span class="text-primary text-4xl">RM4,190</span> sahaja.
+                    Dari <span class="text-primary text-4xl">RM3,890</span> sahaja.
                 </p>
 <p class="mb-8 max-w-2xl text-base leading-relaxed text-on-surface-variant md:text-lg mx-auto">
                     Sesuai untuk yang cari trip yang atur caranya jelas, tempat makan sesuai, dan ada tour leader dari Malaysia sepanjang perjalanan.
@@ -318,7 +318,7 @@
 
 <div class="p-4 md:p-8">
 <div class="mx-auto flex w-full max-w-2xl flex-col gap-3 rounded-[1.75rem] bg-[#eaf2f9] p-3 sm:flex-row">
-<button class="pricing-tab-btn active flex-1 rounded-[1.25rem] border-2 border-[#123b66] bg-[#123b66] px-5 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_20px_40px_-24px_rgba(18,59,102,0.75)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_24px_44px_-22px_rgba(18,59,102,0.85)]" data-tab="premier" type="button">Tarikh Utama 2026</button>
+<button class="pricing-tab-btn active flex-1 rounded-[1.25rem] border-2 border-[#123b66] bg-[#123b66] px-5 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_20px_40px_-24px_rgba(18,59,102,0.75)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_24px_44px_-22px_rgba(18,59,102,0.85)]" data-tab="premier" type="button">Tarikh Cuti Sekolah 2026</button>
 <button class="pricing-tab-btn flex-1 rounded-[1.25rem] border-2 border-transparent bg-white px-5 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-[#123b66] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:border-[#123b66]/20 hover:bg-[#f7fbff]" data-tab="pelepasan" type="button">Tarikh Pelepasan 2026</button>
 </div>
 
@@ -327,8 +327,7 @@
 <div class="pricing-panel tab-content" id="pricing-panel-pelepasan"></div>
 </div>
 
-<div class="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-<div class="rounded-2xl border border-[#123b66]/12 bg-surface px-4 py-4"><p class="text-[11px] font-bold uppercase tracking-[0.24em] text-[#123b66]">CUTI 1</p><p class="mt-2 text-sm font-semibold text-on-surface">Mula : 19 MAR 2026</p><p class="text-sm font-semibold text-on-surface">Tamat : 29 MAR 2026</p></div>
+<div class="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
 <div class="rounded-2xl border border-[#123b66]/12 bg-surface px-4 py-4"><p class="text-[11px] font-bold uppercase tracking-[0.24em] text-[#123b66]">CUTI 2</p><p class="mt-2 text-sm font-semibold text-on-surface">Mula : 23 MAY 2026</p><p class="text-sm font-semibold text-on-surface">Tamat : 07 JUN 2026</p></div>
 <div class="rounded-2xl border border-[#123b66]/12 bg-surface px-4 py-4"><p class="text-[11px] font-bold uppercase tracking-[0.24em] text-[#123b66]">CUTI 3</p><p class="mt-2 text-sm font-semibold text-on-surface">Mula : 29 AUG 2026</p><p class="text-sm font-semibold text-on-surface">Tamat : 06 SEP 2026</p></div>
 <div class="rounded-2xl border border-[#123b66]/12 bg-surface px-4 py-4"><p class="text-[11px] font-bold uppercase tracking-[0.24em] text-[#123b66]">CUTI 4</p><p class="mt-2 text-sm font-semibold text-on-surface">Mula : 05 DIS 2026</p><p class="text-sm font-semibold text-on-surface">Tamat : 31 DIS 2026</p></div>
@@ -349,12 +348,10 @@
 (() => {
   const pricingData = {
     premier: {
-      badge: 'Tarikh Utama 2026',
-      title: 'Jadual Tarikh Utama',
-      note: 'Pilihan tarikh utama bagi tempahan 2026.',
+      badge: 'Tarikh Cuti Sekolah 2026',
+      title: 'Jadual Tarikh Cuti Sekolah',
+      note: 'Pilihan tarikh cuti sekolah bagi tempahan 2026.',
       rows: [
-        { group: 'CUTI 1' },
-        { depart: '25 MAR 2026', arrive: '31 MAR 2026', original: 'RM 4,890', promo: 'RM 4,790', note: 'Cuti Sekolah + Raya Eid Fitri' },
         { group: 'CUTI 2' },
         { depart: '28 MEI 2026', arrive: '03 JUN 2026', original: 'RM 4,890', promo: 'RM 4,790', note: 'Cuti Sekolah + Raya Eid Adha' },
         { depart: '29 MEI 2026', arrive: '04 JUN 2026', original: 'RM 4,890', promo: 'RM 4,790', note: 'Cuti Sekolah + Raya Eid Adha' },
@@ -383,7 +380,6 @@
       title: 'Jadual Pelepasan',
       note: 'Pilihan tarikh pelepasan mengikut jadual semasa.',
       rows: [
-        { depart: '07 FEB 2026', arrive: '13 FEB 2026', original: 'RM 4,590', promo: 'RM 4,490', note: 'Musim Winter' },
         { depart: '02 APR 2026', arrive: '08 APR 2026', original: 'RM 4,590', promo: 'RM 4,490', note: 'Musim Spring' },
         { depart: '09 APR 2026', arrive: '14 APR 2026', original: 'RM 4,590', promo: 'RM 4,490', note: 'Musim Spring' },
         { depart: '16 APR 2026', arrive: '22 APR 2026', original: 'RM 4,590', promo: 'RM 4,490', note: 'Musim Spring' },
