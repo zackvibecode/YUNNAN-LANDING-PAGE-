@@ -158,7 +158,7 @@ const html = `<!DOCTYPE html>
                 </div>
             </div>
         </div>
-    </section>
+    </section>L
 
     <!-- Packages / Pricing Section (Clean Grouped Layout) -->
     <section class="py-24 bg-brand-gray" id="packages">
