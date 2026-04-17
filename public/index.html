@@ -1100,6 +1100,32 @@ if (gallerySlider && galleryPrev && galleryNext) {
     });
 }
 </script>
+<script id="wa-rotator">
+(function() {
+    const waNumbers = [
+        "60162879202",
+        "60143259202",
+        "601116339202",
+        "60109149202",
+        "60149379202"
+    ];
+    
+    // Pick a random number from the list
+    const randomIdx = Math.floor(Math.random() * waNumbers.length);
+    const selectedNumber = waNumbers[randomIdx];
+    const message = encodeURIComponent("Assalammualaikum Nusa Travel, saya berminat dengan Pakej Yunnan 7H5M 2026.");
+    
+    const waUrl = `https://wa.me/${selectedNumber}?text=${message}`;
+    
+    // Update all links that point to wa.me
+    const waLinks = document.querySelectorAll('a[href*="wa.me"]');
+    waLinks.forEach(link => {
+        link.href = waUrl;
+    });
+    
+    console.log("WhatsApp Rotator active. Selected staff: " + selectedNumber);
+})();
+</script>
 </body></html>
 
 
