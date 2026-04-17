@@ -1132,21 +1132,45 @@ if (gallerySlider && galleryPrev && galleryNext) {
         "60109149202",
         "60149379202"
     ];
-    
-    // Pick a random number from the list
-    const randomIdx = Math.floor(Math.random() * waNumbers.length);
-    const selectedNumber = waNumbers[randomIdx];
+
+    const STORAGE_KEY = "wa_rr_index";
     const message = encodeURIComponent("Assalammualaikum Nusa Travel, saya berminat dengan Pakej Yunnan 7H5M 2026.");
-    
-    const waUrl = `https://wa.me/${selectedNumber}?text=${message}`;
-    
-    // Update all links that point to wa.me
-    const waLinks = document.querySelectorAll('a[href*="wa.me"]');
-    waLinks.forEach(link => {
-        link.href = waUrl;
+
+    function getCurrentIndex() {
+        return parseInt(localStorage.getItem(STORAGE_KEY) || "0", 10) % waNumbers.length;
+    }
+
+    function advanceIndex() {
+        const next = (getCurrentIndex() + 1) % waNumbers.length;
+        localStorage.setItem(STORAGE_KEY, next);
+    }
+
+    function buildUrl(number) {
+        return `https://wa.me/${number}?text=${message}`;
+    }
+
+    // Set href on page load based on current round-robin index
+    function updateLinks() {
+        const idx = getCurrentIndex();
+        const url = buildUrl(waNumbers[idx]);
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.href = url;
+        });
+    }
+
+    // On click: advance index first, then let browser follow the already-set href
+    document.addEventListener("click", function(e) {
+        const link = e.target.closest('a[href*="wa.me"]');
+        if (!link) return;
+        e.preventDefault();
+        const currentUrl = link.href;
+        advanceIndex();
+        updateLinks();
+        window.open(currentUrl, "_blank");
     });
-    
-    console.log("WhatsApp Rotator active. Selected staff: " + selectedNumber);
+
+    updateLinks();
+    console.log("WA Round-Robin active. Next: " + waNumbers[getCurrentIndex()]);
 })();
 </script>
 </body></html>
